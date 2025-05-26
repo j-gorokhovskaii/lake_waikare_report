@@ -7,3 +7,500 @@
 
 % Add your LaTeX content below this line
 
+\section{Requirements Analysis}
+\label{sec:requirements}
+
+\subsection{Requirements Gathering Process}
+\label{subsec:requirements_process}
+
+The requirements analysis for the Lake Waikare Digital Library employed a comprehensive approach combining stakeholder consultation, cultural research, and technical feasibility assessment. This process ensured that both explicit functional needs and implicit cultural requirements were identified and integrated into the platform specification, with particular emphasis on community data sovereignty and authentic cultural representation.
+
+Requirements gathering occurred through multiple channels: direct stakeholder interviews with Glen Tupuhi and academic supervisors, analysis of existing digital heritage platforms, literature review of indigenous knowledge preservation best practices, evaluation of Greenstone Digital Library capabilities, assessment of Waikato Regional Council environmental data systems, and iterative feedback collection throughout the development process.
+
+The requirements were categorized into functional requirements (what the system must do), non-functional requirements (how the system must perform), cultural requirements (how the system must respect and represent M\=aori values and protocols), technical architecture requirements (how the system integrates with Greenstone), data sovereignty requirements (how community control is maintained), and integration requirements (how external data sources are incorporated).
+
+\subsection{Technical Architecture Requirements}
+\label{subsec:technical_architecture}
+
+\subsubsection{Greenstone Platform Integration}
+\label{subsubsec:greenstone_integration}
+
+\textbf{TR-01: Core Greenstone Functionality Extension}
+\begin{itemize}
+    \item The system shall extend Greenstone Digital Library Software core functionality while maintaining compatibility with future Greenstone updates
+    \item Custom collection configurations shall follow Greenstone best practices and documentation standards
+    \item All customizations shall be implemented through Greenstone's plugin architecture where possible
+    \item The system shall preserve Greenstone's administrative interfaces for community management
+\end{itemize}
+
+\textbf{TR-02: Metadata Schema Integration}
+\begin{itemize}
+    \item Custom metadata schemas shall integrate with Greenstone's existing Dublin Core and qualified Dublin Core frameworks
+    \item Cultural metadata fields shall be implemented through Greenstone's extensible metadata system
+    \item Geographic metadata shall utilize Greenstone's spatial data handling capabilities
+    \item Temporal metadata shall support both Western date formats and M\=aori seasonal/cultural time references
+\end{itemize}
+
+\textbf{TR-03: Interface Customization Framework}
+\begin{itemize}
+    \item Child Mode interface shall be implemented through Greenstone's interface customization system
+    \item Multilingual support shall utilize Greenstone's internationalization framework
+    \item Custom navigation elements shall integrate with Greenstone's existing user interface components
+    \item Map integration shall extend Greenstone's spatial browsing capabilities
+\end{itemize}
+
+\subsubsection{Community Technical Sustainability}
+\label{subsubsec:technical_sustainability}
+
+\textbf{TR-04: Community Maintenance Capability}
+\begin{itemize}
+    \item All technical implementations shall be documented for community maintenance
+    \item Community stakeholders shall receive training in Greenstone administration
+    \item Custom code shall follow clear documentation and commenting standards
+    \item System architecture shall minimize dependency on external technical expertise
+\end{itemize}
+
+\subsection{Data Sovereignty Requirements}
+\label{subsec:data_sovereignty}
+
+\subsubsection{Community Data Control}
+\label{subsubsec:community_control}
+
+\textbf{DS-01: Indigenous Data Sovereignty Implementation}
+\begin{itemize}
+    \item All cultural data shall remain under community ownership and control as defined by CARE Principles for Indigenous Data Governance
+    \item Community stakeholders shall maintain administrative privileges over all cultural content
+    \item Data export capabilities shall enable complete community data portability without technical barriers
+    \item No cultural data shall be accessible without appropriate community authorization
+\end{itemize}
+
+\textbf{DS-02: Community Governance Integration}
+\begin{itemize}
+    \item Technical systems shall support community-defined governance structures for content approval
+    \item Cultural validation workflows shall be implemented through community-controlled processes
+    \item Administrative interfaces shall reflect M\=aori governance principles and decision-making structures
+    \item Community authorities shall have technical override capabilities for all content decisions
+\end{itemize}
+
+\textbf{DS-03: Cultural Intellectual Property Protection}
+\begin{itemize}
+    \item Traditional Knowledge Licenses shall be implemented for appropriate cultural content
+    \item Cultural attribution shall be maintained through persistent metadata
+    \item Community consent mechanisms shall be technically enforced for sensitive content access
+    \item Unauthorized reproduction prevention measures shall be implemented where culturally appropriate
+\end{itemize}
+
+\subsection{Environmental Data Integration Requirements}
+\label{subsec:environmental_integration}
+
+\subsubsection{Regional Council Data Integration}
+\label{subsubsec:regional_data}
+
+\textbf{IR-01: Waikato Regional Council Systems Integration}
+\begin{itemize}
+    \item The system shall integrate with Waikato Regional Council environmental monitoring databases
+    \item Water quality data shall be presented with appropriate scientific accuracy and cultural context
+    \item Environmental monitoring locations shall be mapped to culturally significant sites where appropriate
+    \item Data update frequencies shall maintain currency with Regional Council monitoring schedules
+\end{itemize}
+
+\textbf{IR-02: Environmental-Cultural Data Correlation}
+\begin{itemize}
+    \item Environmental data visualization shall support both Western scientific and M\=aori knowledge perspectives
+    \item Historical environmental data shall correlate with cultural timeline information and oral histories
+    \item Environmental change indicators shall be presented alongside cultural impact narratives
+    \item Traditional ecological knowledge shall be integrated with scientific environmental data where appropriate
+\end{itemize}
+
+\subsection{Functional Requirements}
+\label{subsec:functional_requirements}
+
+\subsubsection{Core Platform Functionality}
+\label{subsubsec:core_functionality}
+
+\textbf{FR-01: Content Management and Organization}
+\begin{itemize}
+    \item The system shall support multiple content types including text, images, audio, video, and environmental data
+    \item The system shall organize content into Records, Collections, Trails, and Overlays following Greenstone collection management principles
+    \item The system shall maintain hierarchical content relationships and cross-references through Greenstone's relationship management
+    \item The system shall support content versioning and historical tracking with full audit trails
+\end{itemize}
+
+\textbf{FR-02: Search and Discovery}
+\begin{itemize}
+    \item The system shall provide comprehensive search functionality across all content using Greenstone's search architecture
+    \item The system shall support filtering by content type, category, date range, geographic location, and cultural significance
+    \item The system shall enable both simple keyword search and advanced multi-criteria search with cultural category support
+    \item The system shall provide search suggestions and auto-completion functionality in both English and te reo M\=aori
+\end{itemize}
+
+\textbf{FR-03: Geographic Information Integration}
+\begin{itemize}
+    \item The system shall display content on an interactive map interface integrated with Greenstone's spatial browsing
+    \item The system shall support multiple map layers for cultural heritage, environmental data, and historical information
+    \item The system shall enable geographic filtering and location-based content discovery with cultural site recognition
+    \item The system shall integrate satellite, topographic, and traditional M\=aori spatial representation methods
+\end{itemize}
+
+\textbf{FR-04: Culturally-Responsive Interface Adaptability}
+\begin{itemize}
+    \item The system shall provide separate Adult and Child interface modes with culturally appropriate design elements
+    \item The system shall support seamless switching between interface modes without data loss
+    \item The system shall adapt interface elements based on cultural protocols and user preferences
+    \item The system shall maintain functionality across different interface modes while respecting cultural access restrictions
+\end{itemize}
+
+\subsubsection{Content Presentation Requirements}
+\label{subsubsec:content_presentation}
+
+\textbf{FR-05: Multilingual and Cultural Support}
+\begin{itemize}
+    \item The system shall support both English and te reo M\=aori content presentation with te reo M\=aori prioritized
+    \item The system shall enable seamless language switching without data loss or cultural context loss
+    \item The system shall maintain cultural context and appropriate cultural terminology across language presentations
+    \item The system shall support te reo M\=aori screen reader compatibility and accessibility tools
+\end{itemize}
+
+\textbf{FR-06: Multimedia Integration}
+\begin{itemize}
+    \item The system shall support audio narration for accessibility and traditional oral history preservation
+    \item The system shall integrate video content with appropriate cultural context and accessibility features
+    \item The system shall optimize multimedia content for varying connection speeds common in rural communities
+    \item The system shall provide alternative formats for accessibility compliance and cultural transmission methods
+\end{itemize}
+
+\textbf{FR-07: Interactive and Cultural Features}
+\begin{itemize}
+    \item The system shall provide contextual information through culturally appropriate popup interfaces
+    \item The system shall support user navigation through related content using M\=aori knowledge organization principles
+    \item The system shall enable appropriate content sharing and referencing functionality with cultural attribution
+    \item The system shall provide educational activities and interactive elements in Child Mode that maintain cultural authenticity
+\end{itemize}
+
+\subsubsection{Data Management Requirements}
+\label{subsubsec:data_management}
+
+\textbf{FR-08: Cultural Content Categorization}
+\begin{itemize}
+    \item The system shall organize content into thematic categories reflecting M\=aori knowledge organization (M\=aori History, Environmental Knowledge, etc.)
+    \item The system shall support temporal categorization using both Western and M\=aori seasonal/cultural time references
+    \item The system shall enable content tagging and metadata assignment following cultural protocols
+    \item The system shall maintain category relationships and hierarchies that respect M\=aori epistemological structures
+\end{itemize}
+
+\textbf{FR-09: Integrated Data Management}
+\begin{itemize}
+    \item The system shall integrate environmental monitoring data with appropriate cultural context and interpretation
+    \item The system shall support historical data visualization that correlates environmental and cultural changes
+    \item The system shall enable data export for research and educational purposes while maintaining cultural protocols
+    \item The system shall maintain data accuracy, source attribution, and cultural acknowledgment for all content
+\end{itemize}
+
+\subsection{Non-Functional Requirements}
+\label{subsec:nonfunctional_requirements}
+
+\subsubsection{Performance Requirements}
+\label{subsubsec:performance_requirements}
+
+\textbf{NFR-01: Community-Appropriate System Performance}
+\begin{itemize}
+    \item Page load times shall be optimized for rural internet connectivity commonly available in the Lake Waikare region
+    \item Map interface shall support smooth interaction on devices commonly used by community members
+    \item Search results shall be returned within reasonable timeframes considering community network conditions
+    \item The system shall support concurrent access by community groups and educational sessions without degradation
+\end{itemize}
+
+\textbf{NFR-02: Scalability for Community Growth}
+\begin{itemize}
+    \item The system architecture shall support content expansion as community contributions grow
+    \item The system shall accommodate increasing user engagement through sustainable scaling approaches
+    \item Data storage shall support growing content volumes efficiently within community resource constraints
+    \item Interface components shall adapt to increased content without compromising cultural presentation quality
+\end{itemize}
+
+\subsubsection{Compatibility Requirements}
+\label{subsubsec:compatibility_requirements}
+
+\textbf{NFR-03: Community Technology Compatibility}
+\begin{itemize}
+    \item The system shall function consistently across web browsers commonly used by community members
+    \item The system shall provide responsive design supporting devices accessible to diverse community demographics
+    \item The system shall maintain functionality across different operating systems without requiring software purchases
+    \item The system shall support both high-speed urban and limited rural bandwidth connections effectively
+\end{itemize}
+
+\textbf{NFR-04: Inclusive Device Accessibility}
+\begin{itemize}
+    \item The system shall support older devices within community members' economic reach
+    \item The system shall provide interfaces appropriate for users with varying technological experience
+    \item The system shall maintain functionality across different screen sizes including older mobile devices
+    \item The system shall support both touch and traditional input methods without preference
+\end{itemize}
+
+\subsubsection{Security and Privacy Requirements}
+\label{subsubsec:security_requirements}
+
+\textbf{NFR-05: Cultural Data Security}
+\begin{itemize}
+    \item The system shall protect cultural content according to traditional knowledge protocols and community-defined access levels
+    \item The system shall implement secure data transmission and storage that maintains community control
+    \item The system shall maintain comprehensive audit trails for all cultural content access and modifications
+    \item The system shall respect indigenous intellectual property rights and cultural ownership through technical enforcement
+\end{itemize}
+
+\textbf{NFR-06: Community Privacy Protection}
+\begin{itemize}
+    \item The system shall not collect personal information without explicit, informed community consent
+    \item The system shall provide transparent privacy policies developed with community input and approval
+    \item The system shall enable community control over all data collection and usage practices
+    \item The system shall comply with relevant privacy legislation while prioritizing indigenous data sovereignty principles
+\end{itemize}
+
+\subsection{Cultural Requirements}
+\label{subsec:cultural_requirements}
+
+\subsubsection{Cultural Authenticity and Protocol Requirements}
+\label{subsubsec:cultural_authenticity}
+
+\textbf{CR-01: M\=aori Cultural Protocol Technical Implementation}
+\begin{itemize}
+    \item The system shall implement technical mechanisms for traditional knowledge access restrictions based on cultural protocols
+    \item The system shall maintain cultural ownership acknowledgment through persistent, tamper-proof metadata
+    \item The system shall integrate traditional M\=aori design principles through culturally-validated interface elements
+    \item The system shall maintain cultural context and significance through specialized metadata schemas and presentation methods
+\end{itemize}
+
+\textbf{CR-02: Community Authority and Validation Systems}
+\begin{itemize}
+    \item All cultural content shall be validated through technically-supported community authority workflows
+    \item The system design shall incorporate real-time community feedback and guidance mechanisms
+    \item Cultural representation shall be subject to community approval through integrated validation systems
+    \item The system shall support community involvement in content development through user-friendly contribution tools
+\end{itemize}
+
+\subsubsection{Cultural Preservation and Transmission Requirements}
+\label{subsubsec:cultural_preservation}
+
+\textbf{CR-03: Traditional Knowledge Technical Preservation}
+\begin{itemize}
+    \item The system shall preserve traditional knowledge using culturally appropriate digital formats and presentation methods
+    \item The system shall maintain technical connections between cultural practices and environmental knowledge through linked data structures
+    \item The system shall support intergenerational knowledge transmission through age-appropriate but culturally consistent interfaces
+    \item The system shall technically enforce appropriate access controls for sacred or sensitive cultural information
+\end{itemize}
+
+\textbf{CR-04: Cultural Education Technical Support}
+\begin{itemize}
+    \item The system shall provide educational resources through technically sophisticated but culturally appropriate delivery methods
+    \item The system shall support both formal and informal cultural learning through flexible content presentation systems
+    \item The system shall integrate cultural values and worldviews throughout the technical platform architecture
+    \item The system shall promote understanding of cultural and environmental connections through sophisticated data correlation and presentation
+\end{itemize}
+
+\subsection{Accessibility Requirements}
+\label{subsec:accessibility_requirements}
+
+\subsubsection{Cultural and Universal Design Requirements}
+\label{subsubsec:cultural_universal_design}
+
+\textbf{AR-01: Culturally-Informed Accessibility Compliance}
+\begin{itemize}
+    \item The system shall meet WCAG 2.1 Level AA accessibility standards while accommodating M\=aori cultural interface preferences
+    \item All interactive elements shall be keyboard accessible and compatible with te reo M\=aori screen readers
+    \item Color contrast and visual design shall meet accessibility requirements while respecting M\=aori aesthetic principles
+    \item Alternative text and multimedia descriptions shall maintain cultural context and appropriate cultural terminology
+\end{itemize}
+
+\textbf{AR-02: Community-Specific Assistive Technology Support}
+\begin{itemize}
+    \item The system shall be compatible with assistive technologies used by community members
+    \item The system shall provide audio descriptions that maintain cultural context and te reo M\=aori pronunciation
+    \item The system shall support interface modifications appropriate for elder users and varying visual capabilities
+    \item The system shall enable navigation methods suitable for users with varying technological experience
+\end{itemize}
+
+\subsubsection{Community Inclusive Design Requirements}
+\label{subsubsec:community_inclusive_design}
+
+\textbf{AR-03: Multi-Generational Community Accessibility}
+\begin{itemize}
+    \item The system shall accommodate community members with varying technical skills through progressive interface complexity
+    \item Interface complexity shall be adjustable based on user preferences while maintaining cultural authenticity
+    \item The system shall provide multiple pathways to access content reflecting different learning and discovery styles
+    \item Help and guidance shall be available throughout the user experience in both English and te reo M\=aori
+\end{itemize}
+
+\textbf{AR-04: Economic and Digital Equity}
+\begin{itemize}
+    \item The system shall be freely accessible without cost barriers to community members
+    \item The system shall function effectively on older devices within community members' economic reach
+    \item Content shall be optimized for minimal data usage to accommodate limited internet plans
+    \item The system shall not require premium software, subscriptions, or additional purchases for full functionality
+\end{itemize}
+
+\subsection{User Story Analysis}
+\label{subsec:user_stories}
+
+\subsubsection{Primary Community User Stories}
+\label{subsubsec:primary_stories}
+
+\textbf{US-01: Cultural Knowledge Keeper (Kaumatua)}
+``As an elder with traditional knowledge about Lake Waikare, I want to share cultural stories and practices with younger generations through a digital platform that respects our cultural protocols, maintains the integrity of our traditional knowledge, and ensures our stories remain under our control.''
+
+\textbf{Acceptance Criteria:}
+\begin{itemize}
+    \item Cultural content can be contributed through community-controlled validation processes
+    \item Traditional knowledge is presented with proper cultural context and protocol compliance
+    \item Content accessibility accommodates elders with varying technical experience
+    \item Cultural ownership and intellectual property rights are technically enforced and clearly acknowledged
+    \item Sacred or sensitive knowledge can be restricted according to traditional protocols
+\end{itemize}
+
+\textbf{US-02: M\=aori Educator}
+``As a teacher working in M\=aori education, I want to access authentic cultural materials and environmental education resources about Lake Waikare that I can integrate into my curriculum while maintaining cultural authenticity and supporting student connection to their heritage.''
+
+\textbf{Acceptance Criteria:}
+\begin{itemize}
+    \item Educational resources are organized according to both Western curriculum needs and M\=aori knowledge structures
+    \item Content is validated by cultural authorities and maintains authenticity
+    \item Materials can be easily integrated into existing educational frameworks
+    \item Age-appropriate content maintains cultural significance without oversimplification
+    \item Environmental and cultural connections are clearly presented for educational use
+\end{itemize}
+
+\textbf{US-03: Community Member with Whakapapa Connections}
+``As a community member with whakapapa connections to Lake Waikare, I want to explore the cultural and environmental heritage of this place to strengthen my understanding of my cultural identity and my responsibilities as tangata whenua.''
+
+\textbf{Acceptance Criteria:}
+\begin{itemize}
+    \item Content is accessible through both geographic and cultural navigation methods
+    \item Whakapapa and cultural connections are clearly presented and maintained
+    \item Historical and contemporary information integrates cultural and environmental perspectives
+    \item Personal cultural exploration is supported through respectful, intuitive interfaces
+    \item Community contributions and perspectives are prominently featured
+\end{itemize}
+
+\subsubsection{Intergenerational User Stories}
+\label{subsubsec:intergenerational_stories}
+
+\textbf{US-04: Tamariki Learner}
+``As a child learning about my M\=aori heritage, I want to explore Lake Waikare's stories and environmental importance through engaging activities that help me understand my culture and my responsibility to protect our environment.''
+
+\textbf{Acceptance Criteria:}
+\begin{itemize}
+    \item Child Mode interface is culturally appropriate and developmentally suitable
+    \item Content is presented through interactive activities that maintain cultural authenticity
+    \item Cultural information is accessible and engaging without compromising traditional knowledge integrity
+    \item Environmental education integrates M\=aori worldview and Western science appropriately
+    \item Learning progression supports different cultural learning styles and capabilities
+\end{itemize}
+
+\textbf{US-05: Whanau Learning}
+``As a parent wanting to strengthen our family's cultural connections, I want to explore cultural and environmental information about Lake Waikare with my children to support intergenerational learning and cultural transmission within our wh\=anau.''
+
+\textbf{Acceptance Criteria:}
+\begin{itemize}
+    \item Platform supports shared exploration and intergenerational discussion
+    \item Content is appropriate for wh\=anau learning and cultural transmission
+    \item Interface modes accommodate both adult and child users seamlessly
+    \item Cultural protocols for knowledge sharing within families are supported
+    \item Learning resources support parents in cultural teaching roles
+\end{itemize}
+
+\subsubsection{External User Stories}
+\label{subsubsec:external_stories}
+
+\textbf{US-06: Respectful Researcher}
+``As a researcher studying indigenous knowledge systems and environmental management, I want to access well-documented cultural and environmental information about Lake Waikare for my academic work while respecting cultural protocols, acknowledging community ownership, and ensuring my research benefits the community.''
+
+\textbf{Acceptance Criteria:}
+\begin{itemize}
+    \item Advanced search capabilities support detailed research while respecting access protocols
+    \item Content is properly documented with metadata that maintains cultural context and attribution
+    \item Cultural protocols and access restrictions are clearly indicated and technically enforced
+    \item Research use requires appropriate cultural permissions and community benefit agreements
+    \item Data can be referenced and cited in ways that respect indigenous intellectual property
+\end{itemize}
+
+\subsection{Requirements Prioritization}
+\label{subsec:requirements_prioritization}
+
+Requirements were prioritized using the MoSCoW method (Must have, Should have, Could have, Won't have) in direct consultation with Glen Tupuhi and community stakeholders, with cultural authenticity and community control prioritized above technical sophistication:
+
+\subsubsection{Must Have Requirements}
+\label{subsubsec:must_have}
+
+\begin{table}[H]
+\centering
+\caption{Must Have Requirements Priority Matrix}
+\label{tab:must_have_requirements}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Requirement Category} & \textbf{Critical Requirements} \\
+\midrule
+Data Sovereignty & Community control, cultural IP protection \\
+Cultural Authenticity & Community validation, protocol compliance \\
+Technical Foundation & Greenstone integration, basic functionality \\
+Accessibility & Community device support, multilingual interface \\
+Core Functionality & Content management, search, geographic integration \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Should Have Requirements}
+\label{subsubsec:should_have}
+
+\begin{itemize}
+    \item Advanced environmental data visualization with cultural context
+    \item Comprehensive Child Mode educational activities
+    \item Enhanced community contribution and validation workflows
+    \item Sophisticated cultural-environmental data correlation tools
+    \item Advanced accessibility features for diverse community needs
+\end{itemize}
+
+\subsubsection{Could Have Requirements}
+\label{subsubsec:could_have}
+
+\begin{itemize}
+    \item Enhanced multimedia optimization for very limited bandwidth
+    \item Integration with external M\=aori educational platforms
+    \item Advanced data export capabilities for research purposes
+    \item Community-controlled social features for knowledge sharing
+\end{itemize}
+
+\subsubsection{Won't Have Requirements (This Phase)}
+\label{subsubsec:wont_have}
+
+\begin{itemize}
+    \item Mobile application development (web-first approach prioritized)
+    \item Virtual reality integration (technology access barriers for community)
+    \item Advanced gamification features (potential cultural appropriateness concerns)
+    \item Commercial features or revenue generation capabilities
+\end{itemize}
+
+\subsection{Requirements Validation}
+\label{subsec:requirements_validation}
+
+Requirements validation occurred through multiple culturally-appropriate mechanisms throughout the project lifecycle, with community authority and cultural authenticity prioritized over technical validation:
+
+\subsubsection{Cultural Authority Validation Process}
+\label{subsubsec:cultural_validation}
+
+Cultural requirements were validated through ongoing consultation with Glen Tupuhi and associated cultural authorities, ensuring that platform development respected traditional protocols, community values, and indigenous data sovereignty principles. This validation process included review of technical implementations for cultural appropriateness, assessment of community control mechanisms, and evaluation of cultural representation accuracy.
+
+\subsubsection{Community Stakeholder Review Process}
+\label{subsubsec:community_stakeholder_review}
+
+Regular consultation with community stakeholders ensured requirements remained aligned with genuine community needs rather than external assumptions about cultural preservation. Bi-weekly review sessions provided opportunities for requirement refinement, cultural protocol clarification, and community priority validation.
+
+\subsubsection{Technical Feasibility Assessment}
+\label{subsubsec:technical_feasibility}
+
+Technical requirements were validated through Greenstone platform assessment, prototype development, and testing with community-accessible devices and network conditions. This ensured that functional specifications could be implemented within community technical contexts and resource constraints while maintaining cultural requirement compliance.
+
+\subsubsection{Academic Supervision Validation}
+\label{subsubsec:academic_validation}
+
+Academic supervisors provided validation of requirement comprehensiveness, technical feasibility, and project scope appropriateness while ensuring that academic rigor supported rather than compromised community objectives and cultural authenticity.
+
+The comprehensive requirements analysis provided a culturally-grounded foundation for platform development, ensuring that both explicit functional needs and implicit cultural considerations were addressed throughout the design and implementation process. This approach prioritizes community data sovereignty and cultural authenticity while leveraging sophisticated technical capabilities to serve genuine community needs.

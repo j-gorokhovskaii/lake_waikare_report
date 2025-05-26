@@ -1,47 +1,84 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{SECTION 1: PROJECT INTRODUCTION AND CONTEXT}{6}{Doc-Start}%
-\contentsline {section}{\numberline {1}PROJECT INTRODUCTION AND CONTEXT}{6}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Cultural and Environmental Crisis}{6}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Digital Preservation as Cultural Revitalization}{6}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Research Significance and Innovation}{7}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Community-Centered Methodology}{8}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Project Scope and Objectives}{8}{subsection.1.5}%
-\contentsline {section}{SECTION 2: ORGANIZATIONAL CONTEXT AND WORK ENVIRONMENT}{10}{subsection.1.5}%
-\contentsline {section}{\numberline {2}ORGANIZATIONAL CONTEXT AND WORK ENVIRONMENT}{10}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Primary Institutional Framework}{10}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}The University of Waikato - Academic Foundation}{10}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Supervision and Academic Governance}{10}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}Community Stakeholder Organizations}{11}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Primary Cultural Authority - Glen Tupuhi and Associated Networks}{11}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Regional Government Partnership}{12}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Local Iwi Partnership Structure}{12}{subsubsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}Collaborative Work Environment and Methodology}{12}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Agile Development Framework}{12}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Community Consultation Integration}{13}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Institutional Resources and Infrastructure}{13}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Technical Infrastructure}{13}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Academic and Cultural Resources}{13}{subsubsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.5}Quality Assurance and Ethical Framework}{14}{subsection.2.5}%
-\contentsline {section}{SECTION 3: PROJECT DESCRIPTION AND BACKGROUND KNOWLEDGE}{15}{subsection.2.5}%
-\contentsline {subsection}{3.1 Literature Review and Background Knowledge}{15}{section*.1}%
-\contentsline {subsection}{3.2 Project Goals and Objectives}{15}{section*.1}%
-\contentsline {subsection}{3.3 Development Methodology and Project Milestones}{15}{section*.1}%
-\contentsline {subsection}{3.4 Requirements Analysis and System Design}{15}{section*.1}%
-\contentsline {section}{SECTION 4: PROJECT EXECUTION AND RESULTS}{16}{section*.1}%
-\contentsline {subsection}{4.1 Technical Implementation and Execution}{16}{section*.2}%
-\contentsline {subsection}{4.2 Prototype Development and Features}{16}{section*.2}%
-\contentsline {subsection}{4.3 User Experience and Cultural Integration}{16}{section*.2}%
-\contentsline {subsection}{4.4 Accessibility Implementation and Testing}{16}{section*.2}%
-\contentsline {subsection}{4.5 Evaluation and Validation Results}{16}{section*.2}%
-\contentsline {section}{SECTION 5: CRITICAL REFLECTION AND PROFESSIONAL DEVELOPMENT}{17}{section*.2}%
-\contentsline {subsection}{5.1 Lessons Learned and Knowledge Application}{17}{section*.3}%
-\contentsline {subsection}{5.2 Challenges, Solutions, and Professional Growth}{17}{section*.3}%
-\contentsline {subsection}{5.3 Future Work and Continuous Learning}{17}{section*.3}%
-\contentsline {section}{PROJECT CONCLUSION}{18}{section*.3}%
-\contentsline {section}{REFERENCES}{19}{section*.3}%
-\contentsline {section}{APPENDICES}{20}{section*.3}%
-\contentsline {section}{\numberline {A}Design Evolution and Wireframes}{20}{appendix.A}%
-\contentsline {section}{\numberline {B}Stakeholder Feedback and Community Consultation}{20}{appendix.B}%
-\contentsline {section}{\numberline {C}Technical Specifications and Code Documentation}{20}{appendix.C}%
-\contentsline {section}{\numberline {D}Testing Results and Performance Metrics}{20}{appendix.D}%
-\contentsline {section}{\numberline {E}Cultural Protocol Documentation}{20}{appendix.E}%
+\contentsline {section}{SECTION 1: PROJECT INTRODUCTION AND CONTEXT}{7}{Doc-Start}%
+\contentsline {section}{\numberline {1}PROJECT INTRODUCTION AND CONTEXT}{7}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Cultural and Environmental Crisis}{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Digital Preservation as Cultural Revitalization}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Research Significance and Innovation}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Community-Centered Methodology}{9}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Project Scope and Objectives}{9}{subsection.1.5}%
+\contentsline {section}{SECTION 2: ORGANIZATIONAL CONTEXT AND WORK ENVIRONMENT}{11}{subsection.1.5}%
+\contentsline {section}{\numberline {2}ORGANIZATIONAL CONTEXT AND WORK ENVIRONMENT}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Primary Institutional Framework}{11}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}The University of Waikato - Academic Foundation}{11}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Supervision and Academic Governance}{11}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Community Stakeholder Organizations}{12}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Primary Cultural Authority - Glen Tupuhi and Associated Networks}{12}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Regional Government Partnership}{13}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Local Iwi Partnership Structure}{13}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Collaborative Work Environment and Methodology}{13}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Agile Development Framework}{13}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Community Consultation Integration}{14}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Institutional Resources and Infrastructure}{14}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Technical Infrastructure}{14}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Academic and Cultural Resources}{14}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Quality Assurance and Ethical Framework}{15}{subsection.2.5}%
+\contentsline {section}{SECTION 3: PROJECT DESCRIPTION AND BACKGROUND KNOWLEDGE}{16}{subsection.2.5}%
+\contentsline {subsection}{3.1 Literature Review and Background Knowledge}{16}{section*.1}%
+\contentsline {subsection}{3.2 Project Goals and Objectives}{16}{section*.1}%
+\contentsline {subsection}{3.3 Development Methodology and Project Milestones}{16}{section*.1}%
+\contentsline {subsection}{3.4 Requirements Analysis and System Design}{16}{section*.1}%
+\contentsline {section}{\numberline {3}Requirements Analysis}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Requirements Gathering Process}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Technical Architecture Requirements}{16}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Greenstone Platform Integration}{16}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Community Technical Sustainability}{17}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Data Sovereignty Requirements}{18}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Community Data Control}{18}{subsubsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.4}Environmental Data Integration Requirements}{19}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Regional Council Data Integration}{19}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}Functional Requirements}{19}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Core Platform Functionality}{19}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Content Presentation Requirements}{21}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Data Management Requirements}{22}{subsubsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.6}Non-Functional Requirements}{22}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Performance Requirements}{22}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Compatibility Requirements}{23}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Security and Privacy Requirements}{24}{subsubsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.7}Cultural Requirements}{24}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Cultural Authenticity and Protocol Requirements}{24}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}Cultural Preservation and Transmission Requirements}{25}{subsubsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.8}Accessibility Requirements}{26}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Cultural and Universal Design Requirements}{26}{subsubsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.2}Community Inclusive Design Requirements}{26}{subsubsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.9}User Story Analysis}{27}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}Primary Community User Stories}{27}{subsubsection.3.9.1}%
+\contentsline {subsubsection}{\numberline {3.9.2}Intergenerational User Stories}{28}{subsubsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.3}External User Stories}{29}{subsubsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.10}Requirements Prioritization}{29}{subsection.3.10}%
+\contentsline {subsubsection}{\numberline {3.10.1}Must Have Requirements}{30}{subsubsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.2}Should Have Requirements}{30}{subsubsection.3.10.2}%
+\contentsline {subsubsection}{\numberline {3.10.3}Could Have Requirements}{30}{subsubsection.3.10.3}%
+\contentsline {subsubsection}{\numberline {3.10.4}Won't Have Requirements (This Phase)}{30}{subsubsection.3.10.4}%
+\contentsline {subsection}{\numberline {3.11}Requirements Validation}{30}{subsection.3.11}%
+\contentsline {subsubsection}{\numberline {3.11.1}Cultural Authority Validation Process}{31}{subsubsection.3.11.1}%
+\contentsline {subsubsection}{\numberline {3.11.2}Community Stakeholder Review Process}{31}{subsubsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.3}Technical Feasibility Assessment}{31}{subsubsection.3.11.3}%
+\contentsline {subsubsection}{\numberline {3.11.4}Academic Supervision Validation}{31}{subsubsection.3.11.4}%
+\contentsline {section}{SECTION 4: PROJECT EXECUTION AND RESULTS}{32}{subsubsection.3.11.4}%
+\contentsline {subsection}{4.1 Technical Implementation and Execution}{32}{section*.3}%
+\contentsline {subsection}{4.2 Prototype Development and Features}{32}{section*.3}%
+\contentsline {subsection}{4.3 User Experience and Cultural Integration}{32}{section*.3}%
+\contentsline {subsection}{4.4 Accessibility Implementation and Testing}{32}{section*.3}%
+\contentsline {subsection}{4.5 Evaluation and Validation Results}{32}{section*.3}%
+\contentsline {section}{SECTION 5: CRITICAL REFLECTION AND PROFESSIONAL DEVELOPMENT}{33}{section*.3}%
+\contentsline {subsection}{5.1 Lessons Learned and Knowledge Application}{33}{section*.4}%
+\contentsline {subsection}{5.2 Challenges, Solutions, and Professional Growth}{33}{section*.4}%
+\contentsline {subsection}{5.3 Future Work and Continuous Learning}{33}{section*.4}%
+\contentsline {section}{PROJECT CONCLUSION}{34}{section*.4}%
+\contentsline {section}{REFERENCES}{35}{section*.4}%
+\contentsline {section}{APPENDICES}{36}{section*.4}%
+\contentsline {section}{\numberline {A}Design Evolution and Wireframes}{36}{appendix.A}%
+\contentsline {section}{\numberline {B}Stakeholder Feedback and Community Consultation}{36}{appendix.B}%
+\contentsline {section}{\numberline {C}Technical Specifications and Code Documentation}{36}{appendix.C}%
+\contentsline {section}{\numberline {D}Testing Results and Performance Metrics}{36}{appendix.D}%
+\contentsline {section}{\numberline {E}Cultural Protocol Documentation}{36}{appendix.E}%
