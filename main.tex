@@ -1,0 +1,287 @@
+﻿% ============================================================================
+% LAKE WAIKARE DIGITAL LIBRARY - MAIN DOCUMENT
+% ============================================================================
+% Rubric-optimized structure for maximum marks (36/36 points)
+% TODO: Copy your main.tex content here
+% ============================================================================
+
+% Add your complete main.tex content here
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{tikz}
+
+% Fix header height warning
+\setlength{\headheight}{14.5pt}
+
+% Page setup
+\geometry{margin=2.5cm}
+\onehalfspacing
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Lake Waikare Digital Library}
+\fancyhead[R]{Final Project Report}
+\fancyfoot[C]{\thepage}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=green,
+}
+
+% Title formatting
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Custom commands
+\newcommand{\projecttitle}{Lake Waikare Digital Library: A Cultural and Environmental Preservation Platform}
+\newcommand{\course}{CSMAX570-25A}
+\newcommand{\group}{Group 10}
+\newcommand{\university}{The University of Waikato}
+
+% Placeholder command for images
+\newcommand{\placeholder}[4][0.8]{
+    \begin{tikzpicture}
+        \draw[thick, dashed, gray] (0,0) rectangle (#1\textwidth,#2cm);
+        \node[align=center] at (#1\textwidth/2,#2cm/2) {
+            \textbf{\large [PLACEHOLDER]}\\[0.5cm]
+            \textbf{#3}\\[0.2cm]
+            \textit{#4}
+        };
+    \end{tikzpicture}
+}
+
+% Document begins
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\vspace*{0.5cm}
+
+% University of Waikato logo
+\includegraphics[width=0.3\textwidth]{university_logo.png}\\[1cm]
+
+\textsc{\LARGE The University of Waikato}\\[0.5cm]
+\textsc{\Large CSMAX570-25A: Computer Science Masters}\\[1.5cm]
+
+\rule{\linewidth}{0.5mm}\\[0.4cm]
+{\huge\bfseries Lake Waikare Digital Library: A Cultural and Environmental Preservation Platform}\\[0.4cm]
+\rule{\linewidth}{0.5mm}\\[1cm]
+
+{\Large\bfseries Final Project Report}\\[2cm]
+
+\begin{minipage}{\textwidth}
+\begin{center} \large
+\emph{Submitted by:}\\[0.5cm]
+\begin{tabular}{ll}
+GOROKHOVSKAII Joseph & (1048854)\\
+LI Chen & (1672194)\\
+RAVICHANDRAN Pranavkrishnan & (1660319)\\
+LIN Hina & (1646541)\\
+\end{tabular}
+\end{center}
+\end{minipage}\\[1.5cm]
+
+\begin{minipage}{\textwidth}
+\begin{center} \large
+\emph{Supervision Team:}\\[0.5cm]
+\begin{tabular}{l}
+Dr. Colin Pilbrow (Project Supervisor)\\
+Dr. David Bainbridge (Program Coordinator)\\
+Dr. Alvin Yeo (Course Instructor)\\
+\end{tabular}
+\end{center}
+\end{minipage}\\[1.5cm]
+
+{\large Submission Date: Thursday, 29 May 2025}\\[0.5cm]
+
+{\large Group 10}\\[1cm]
+
+\vfill
+
+% Footer with cultural acknowledgment
+{\small \emph{Developed in partnership with the Lake Waikare community and local iwi}}
+
+\end{center}
+\end{titlepage}
+
+
+% RUBRIC SECTION 1: ABSTRACT/EXECUTIVE SUMMARY (Weight: 1)
+% ================================================================
+\newpage
+\begin{abstract}
+\textbf{\large EXECUTIVE SUMMARY}
+\vspace{0.5cm}
+
+The Lake Waikare Digital Library represents a comprehensive digital preservation platform designed to safeguard the cultural heritage and environmental history of the Lake Waikare region in New Zealand. This report presents the final outcomes of an innovative solution that addresses the critical intersection of Māori cultural preservation and environmental awareness through community-centered technology development.
+
+\textbf{Project Essence:} The platform integrates interactive mapping technology, authentic multilingual content presentation (te reo Māori and English), and innovative age-appropriate learning interfaces to serve diverse community needs while respecting traditional knowledge protocols.
+
+\textbf{Key Innovations:} Our primary contribution is the development of a dedicated Child Mode for engaging younger generations with cultural heritage, sophisticated search and filtering capabilities preserving cultural context, and a culturally-sensitive design approach developed through extensive community consultation with cultural authorities.
+
+\textbf{Methodology:} We employed iterative, user-centered design principles with continuous stakeholder feedback integration, prioritizing authentic community partnership over extractive research approaches. The development process integrated ongoing cultural consultation rather than one-time approval mechanisms.
+
+\textbf{Results:} The final prototype demonstrates successful achievement of three primary objectives: effective cultural preservation mechanisms maintaining traditional knowledge integrity, enhanced environmental awareness capabilities connecting cultural and ecological understanding, and inclusive community engagement features supporting intergenerational learning.
+
+\textbf{Impact and Contribution:} This project contributes to digital heritage preservation by demonstrating practical approaches to indigenous knowledge representation, intergenerational cultural transmission, and the integration of environmental education with cultural preservation while maintaining community control and cultural authenticity.
+
+\textbf{Keywords:} Digital heritage preservation, Māori cultural authenticity, Environmental education integration, Intergenerational engagement, Community-centered design, Indigenous knowledge systems, Accessibility and inclusion
+\end{abstract}
+
+% Table of Contents
+\newpage
+\tableofcontents
+
+% List of Figures
+\newpage
+\listoffigures
+
+% List of Tables
+\newpage
+\listoftables
+
+% RUBRIC SECTION 2: INTRODUCTION (Weight: 1)
+% ==========================================
+\newpage
+\section*{SECTION 1: PROJECT INTRODUCTION AND CONTEXT}
+\addcontentsline{toc}{section}{SECTION 1: PROJECT INTRODUCTION AND CONTEXT}
+\input{sections/01_introduction}
+
+% RUBRIC SECTION 3: COMPANY BACKGROUND/WORK ENVIRONMENT (Weight: 1)
+% ================================================================
+\newpage
+\section*{SECTION 2: ORGANIZATIONAL CONTEXT AND WORK ENVIRONMENT}
+\addcontentsline{toc}{section}{SECTION 2: ORGANIZATIONAL CONTEXT AND WORK ENVIRONMENT}
+\input{sections/02_organizational_context}
+
+% RUBRIC SECTION 4: PROJECT DESCRIPTION (Weight: 2)
+% =================================================
+\newpage
+\section*{SECTION 3: PROJECT DESCRIPTION AND BACKGROUND KNOWLEDGE}
+\addcontentsline{toc}{section}{SECTION 3: PROJECT DESCRIPTION AND BACKGROUND KNOWLEDGE}
+
+\subsection*{3.1 Literature Review and Background Knowledge}
+\addcontentsline{toc}{subsection}{3.1 Literature Review and Background Knowledge}
+\input{sections/03_literature_review}
+
+\subsection*{3.2 Project Goals and Objectives}
+\addcontentsline{toc}{subsection}{3.2 Project Goals and Objectives}
+\input{sections/04_project_goals}
+
+\subsection*{3.3 Development Methodology and Project Milestones}
+\addcontentsline{toc}{subsection}{3.3 Development Methodology and Project Milestones}
+\input{sections/05_methodology}
+
+\subsection*{3.4 Requirements Analysis and System Design}
+\addcontentsline{toc}{subsection}{3.4 Requirements Analysis and System Design}
+\input{sections/06_requirements_analysis}
+
+% RUBRIC SECTION 5: PROJECT RESULTS (Weight: 2)
+% =============================================
+\newpage
+\section*{SECTION 4: PROJECT EXECUTION AND RESULTS}
+\addcontentsline{toc}{section}{SECTION 4: PROJECT EXECUTION AND RESULTS}
+
+\subsection*{4.1 Technical Implementation and Execution}
+\addcontentsline{toc}{subsection}{4.1 Technical Implementation and Execution}
+\input{sections/07_technical_implementation}
+
+\subsection*{4.2 Prototype Development and Features}
+\addcontentsline{toc}{subsection}{4.2 Prototype Development and Features}
+\input{sections/08_prototype_overview}
+
+\subsection*{4.3 User Experience and Cultural Integration}
+\addcontentsline{toc}{subsection}{4.3 User Experience and Cultural Integration}
+\input{sections/09_user_experience_cultural}
+
+\subsection*{4.4 Accessibility Implementation and Testing}
+\addcontentsline{toc}{subsection}{4.4 Accessibility Implementation and Testing}
+\input{sections/10_accessibility_testing}
+
+\subsection*{4.5 Evaluation and Validation Results}
+\addcontentsline{toc}{subsection}{4.5 Evaluation and Validation Results}
+\input{sections/11_evaluation_results}
+
+% RUBRIC SECTION 6: DISCUSSION AND REFLECTION (Weight: 2)
+% ======================================================
+\newpage
+\section*{SECTION 5: CRITICAL REFLECTION AND PROFESSIONAL DEVELOPMENT}
+\addcontentsline{toc}{section}{SECTION 5: CRITICAL REFLECTION AND PROFESSIONAL DEVELOPMENT}
+
+\subsection*{5.1 Lessons Learned and Knowledge Application}
+\addcontentsline{toc}{subsection}{5.1 Lessons Learned and Knowledge Application}
+\input{sections/12_lessons_learned_enhanced}
+
+\subsection*{5.2 Challenges, Solutions, and Professional Growth}
+\addcontentsline{toc}{subsection}{5.2 Challenges, Solutions, and Professional Growth}
+\input{sections/13_challenges_professional_development}
+
+\subsection*{5.3 Future Work and Continuous Learning}
+\addcontentsline{toc}{subsection}{5.3 Future Work and Continuous Learning}
+\input{sections/14_future_work_learning}
+
+% CONCLUSION
+\newpage
+\section*{PROJECT CONCLUSION}
+\addcontentsline{toc}{section}{PROJECT CONCLUSION}
+\input{sections/15_conclusion}
+
+% RUBRIC SECTION 7: REFERENCES (Weight: 1)
+% ========================================
+\newpage
+\section*{REFERENCES}
+\addcontentsline{toc}{section}{REFERENCES}
+\bibliographystyle{ieee}
+\bibliography{references}
+
+% APPENDICES - Supporting Documentation
+\newpage
+\appendix
+\section*{APPENDICES}
+\addcontentsline{toc}{section}{APPENDICES}
+
+\section{Design Evolution and Wireframes}
+\label{appendix:design_evolution}
+\input{sections/appendix_a_design}
+
+\section{Stakeholder Feedback and Community Consultation}
+\label{appendix:stakeholder_feedback}
+\input{sections/appendix_b_stakeholder}
+
+\section{Technical Specifications and Code Documentation}
+\label{appendix:technical_specs}
+\input{sections/appendix_c_technical}
+
+\section{Testing Results and Performance Metrics}
+\label{appendix:testing_results}
+\input{sections/appendix_d_testing}
+
+\section{Cultural Protocol Documentation}
+\label{appendix:cultural_protocols}
+\input{sections/appendix_e_cultural}
+
+\end{document}

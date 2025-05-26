@@ -1,0 +1,11 @@
+﻿PLACEHOLDER IMAGE: performance_charts.png
+=====================================
+This is a placeholder for the image file: performance_charts.png
+
+TODO: Replace this file with your actual image
+
+In LaTeX, you can reference this image with:
+\includegraphics[width=0.8\textwidth]{figures/performance_charts.png}
+
+OR use the placeholder command:
+\placeholder{6}{Image Title}{Image Description}
