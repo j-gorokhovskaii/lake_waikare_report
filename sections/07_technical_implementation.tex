@@ -7,3 +7,74 @@
 
 % Add your LaTeX content below this line
 
+% ============================================================================
+% SECTION 4.1: Technical Implementation and Execution (Rubric: Project Results - Weight 2)
+% ============================================================================
+
+\subsection{Technical Implementation and Execution}
+
+\subsubsection{Wireframe Integration and Design Adjustments}
+
+The development of the prototype was based on the wireframe design previously discussed and documented. Overall, we retained the core structure established in the earlier wireframe, including the homepage layout, the sidebar’s basic structure and animation, the Māori language toggle, the map feature, the main search functionality, and the children’s mode.
+
+However, several structural and functional adjustments were made in response to supervisor feedback and our own hands-on experience with the wireframe.
+
+Firstly, we added an onboarding guide to the homepage. During initial use, users may find it difficult to fully understand or discover all available features on the homepage. The onboarding guide helps users become familiar with key functions, thereby improving the overall user experience.
+
+Secondly, the language toggle now defaults to Māori instead of English, as originally designed in the wireframe. This change reflects the intended user base and emphasizes the website’s commitment to Māori cultural preservation.
+
+Thirdly, we reordered the sidebar, moving the search feature to the bottom. This adjustment groups all map-related features together for better usability and task flow.
+
+Additionally, we enhanced the map interactivity by allowing users to view detailed information about selected locations. This builds on the interactive map foundation while offering deeper insight into location-specific content.
+
+In the children’s mode, we revised the exit logic, allowing users to more easily return to the main site. This improves the usability of the children’s experience.
+
+Lastly, we added a backend administration module, which includes features for adding new records and managing existing ones. This module is critical for content control, data entry, and permission management—functions essential for a system similar to a digital library.
+
+\subsubsection{From Figma to Code-Based Prototyping}
+
+In the early stages of wireframing and prototyping, we used Figma as our primary tool. Figma is widely used for early-stage design and prototyping due to its rich design elements, transition animations, and built-in presentation mode. Its collaborative features also allowed us to work together online in real time, which greatly facilitated team coordination during the initial development phase.
+
+However, as the prototype grew in complexity, we encountered increasing difficulties in managing changes within Figma. Adding new features or modifying existing ones often required significant rework across multiple components, making the development process inefficient. Additionally, inconsistent implementation of interactions and animations by different team members led to frequent errors and omissions.
+
+To address these issues and improve both flexibility and presentation quality, we decided to shift to a code-based approach using HTML, CSS, JavaScript, and http-server. Compared to Figma, this approach allowed greater control over the layout, behavior, and animations, while still supporting all visual and interactive features we needed. The use of http-server enabled smooth local previewing with basic routing and language switching support. Moreover, developing with HTML allowed us to embed our final presentation content directly into the prototype itself, creating a seamless demo experience without the need to switch between slides and prototype.
+
+For the interactive map component, we used the Leaflet library, which enabled rich map interactions, including location markers, pop-up details, and customized styling—fully meeting our prototype’s mapping requirements.
+
+Overall, the team collaboratively selected tools, designed reusable components, and implemented the final prototype through discussion and iteration. This process not only improved the quality of the final product but also deepened our understanding of frontend technologies and system architecture.
+
+\subsubsection{Team Collaboration and Technical Implementation}
+
+The successful delivery of our prototype relied heavily on effective team collaboration. To simulate a professional working environment, we utilized Microsoft Teams for communication and GitHub for version control, aligning with standard practices in contemporary software development. These tools enabled structured coordination and efficient collaboration throughout the project lifecycle.
+
+Weekly retrospectives were conducted every Wednesday morning, during which we reviewed our progress, identified and addressed technical challenges, and established goals for the subsequent development phases. These sessions ensured alignment with the course timeline and facilitated continuous improvement. Beyond formal meetings, our group maintained regular communication via Teams to support ongoing coordination and issue resolution.
+
+Each team member assumed distinct responsibilities and contributed meaningfully to the project. Hina managed the overall timeline and was primarily responsible for the design and development of the map module, including its interactive elements. Joseph, as team leader, oversaw the structural organization of the prototype, led the homepage development, and contributed to the final presentation design. Pranav focused on the development of the administrative interface and proposed essential backend features, including access control mechanisms. Chen Li was responsible for the implementation of the search functionality and the design and development of the Children’s Mode—a feature designed to enhance accessibility and support Māori cultural preservation.
+
+The project followed a structured development plan from inception to completion. In Week 4, we participated in a requirements elicitation session with Glen Tupuhi to define core goals. Week 5 focused on requirement analysis and conceptual modeling. In Week 6, initial sketches and conceptual evaluations were developed. Between Weeks 7 and 9, we created and refined low-fidelity mockups based on peer and supervisor feedback, before progressing to wireframes. From Week 10 onward, these wireframes were iteratively translated into a functional prototype. Weeks 11 to 13 were dedicated to the implementation of core modules—including the homepage, map, search, Children’s Mode, and admin panel—followed by the integration of the final presentation directly into the prototype. The development remained on schedule due to coordinated team effort.
+
+Several technical strategies were employed to enhance usability. To support new users, we implemented a guided tour using the Bootstrap Tour library. The tour highlights key interface components through contextual instructions and is triggered conditionally based on a localStorage flag to avoid redundancy on repeat visits. For the exit mechanism in Children’s Mode, we designed a custom JavaScript-based confirmation process to prevent unintentional navigation, involving a floating action button with an embedded verification popup and session tracking.
+
+The map module, serving as the system’s central interactive component, was developed using the Leaflet library due to its lightweight architecture, extensive customization options, and compatibility with open-source tile providers. We selected OpenStreetMap for rendering, enhanced with interactive markers that link to context-specific information via popups or sidebar content. The visual style of the map was adapted for the Children’s Mode to ensure visual accessibility and thematic consistency.
+
+To accommodate multilingual users and reinforce cultural inclusivity, we implemented a dynamic language-switching feature using JavaScript and JSON-based language packs. Despite not using a full frontend framework, we managed content translation through DOM manipulation and a custom content replacement function, supported by a lightweight local server for testing and routing.
+
+A strong emphasis was placed on component reusability. The language switcher, Bootstrap Tour logic, and sidebar navigation were implemented as shared modules to ensure consistency across views and reduce development redundancy. In Children’s Mode, these components were reused with appropriate visual adjustments, maintaining functional parity with the standard interface.
+
+To validate design decisions and interaction flows, we conducted informal internal user testing. Each team member explored modules developed by others without prior instruction, employing a think-aloud protocol to surface usability issues. Based on the outcomes, several iterative improvements were implemented, including enhanced onboarding guidance, refined animation logic in Children’s Mode, incorporation of contextual imagery in the map interface, and strengthened language-switching feedback to emphasize cultural context.
+
+Finally, to ensure seamless delivery during the demonstration, the presentation slides were integrated directly into the prototype. All core features—including the homepage, map, search, Children’s Mode, admin panel, and multilingual interface—were functional and interconnected, forming a cohesive, interactive system that effectively conveys the project's goals and design philosophy.
+
+\subsubsection{Challenges and Difficulties}
+
+From a technical perspective, we encountered several challenges. First, regarding language switching, we used JavaScript to dynamically load language packs. However, modern browsers block loading external files through the file:// protocol for security reasons. As a result, we had to use a local development server (e.g., http-server) to properly serve our project and enable resource loading via the http://localhost protocol. To manage language state, we used query parameters or hash-based routing and dynamically replaced page content via JavaScript.
+
+Another major technical decision involved selecting the appropriate mapping library. Since the project required rich interactivity with maps (such as adding markers, showing place details, and customizing styles), the tool needed to be lightweight, easy to integrate, yet sufficiently powerful. After comparing several mapping frameworks, we chose Leaflet due to its flexibility, customizability, and moderate learning curve.
+
+We also faced issues with animation and interaction consistency. During the Figma design stage, collaborative editing often led to inconsistent or missing animations. To address this, we standardized component structures when moving to HTML and implemented consistent animations through JavaScript to ensure a unified user experience.
+
+From a user experience and design perspective, none of the team members had formal experience in product definition or UX design. This led to some flaws and inefficiencies in the prototype, requiring frequent adjustments during the development phase.
+
+In terms of teamwork, coordination was occasionally difficult due to varying schedules. Some tasks depended on the completion of prior components, and merging code often involved resolving conflicts. Inconsistencies in code style and documentation also increased communication overhead between team members.
+
+To address these issues, we adopted several tools and practices to improve efficiency, including using JIRA for task tracking, establishing commit message conventions, defining documentation standards, and implementing a Git branching strategy. For future projects, having someone familiar with product definition processes would significantly reduce redundant effort caused by unclear requirements during the early stages.
